@@ -119,7 +119,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: e90033c5f0d89c349810477b9d58f301, type: 2}
 --- !u!1 &213750458
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +137,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &213750459
 MeshCollider:
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 405497083}
   - component: {fileID: 405497084}
   m_Layer: 0
-  m_Name: CuteBoi
+  m_Name: CubeBoi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -316,9 +316,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 405497078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5175355c1d02064dbd3c8d604df4a5b, type: 3}
+  m_Script: {fileID: 11500000, guid: d39f549f7fac4fd4ea0cb93d10f4c4d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodItemslayer:
+    serializedVersion: 2
+    m_Bits: 0
+  ViewRange: 0
+  foodItemsTag: 
 --- !u!195 &405497084
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -469,7 +474,7 @@ GameObject:
   - component: {fileID: 968784998}
   m_Layer: 8
   m_Name: Food
-  m_TagString: Food
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -541,7 +546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968784997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.58, y: 74.23, z: 77.81}
+  m_LocalPosition: {x: 51.38, y: 74.23, z: 79.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

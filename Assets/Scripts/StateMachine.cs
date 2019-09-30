@@ -6,6 +6,11 @@ public class StateMachine : MonoBehaviour
 {
     private IState CurrentlyRunningState;
     private IState PreviousState;
+
+    public void Start()
+    {
+        print("Test");
+    }
     public void ChangeState(IState newState)
     {
         if (this.CurrentlyRunningState != null)
