@@ -29,7 +29,6 @@ public class BasicAI : MonoBehaviour
             agent.SetDestination(target.transform.position);
             animator.SetFloat("VelX", Mathf.Abs(agent.velocity.x*10));
             animator.SetFloat("VelY", Mathf.Abs(agent.velocity.y*10));
-            print(agent.velocity.x + ", " + agent.velocity.y);
         }
     }
 
