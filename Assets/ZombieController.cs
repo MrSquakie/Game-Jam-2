@@ -5,7 +5,7 @@ using UnityEngine;
 public class ZombieController : MonoBehaviour
 {
     private Animator anim => GetComponent<Animator>();
-
+    private Pathfinding.RichAI ai => GetComponentInParent<Pathfinding.RichAI>();
     private Rigidbody rb => GetComponentInParent<Rigidbody>();
     // Start is called before the first frame update
     void Start()
@@ -16,10 +16,12 @@ public class ZombieController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (rb.velocity.magnitude > 0.2f)
-        //{
-            anim.SetFloat("VelX", rb.velocity.x * 5f);
-            anim.SetFloat("VelY", rb.velocity.y * 5f);
-       // }
+        ai.acceleration = 0f;
+        anim.SetBool("hasDestination", true);
     }
+
+   // private void OnAnimatorMove()
+    //{
+     //   rb.velocity = rb.deltaPosition / Time.deltaTime;
+    //}
 }
