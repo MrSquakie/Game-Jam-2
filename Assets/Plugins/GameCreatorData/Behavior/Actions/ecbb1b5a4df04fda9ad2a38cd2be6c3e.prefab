@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5478539804000690167}
   - component: {fileID: 4661345987185739395}
   - component: {fileID: 893884320495247953}
-  - component: {fileID: -8482324533978038040}
+  - component: {fileID: 8843474673236966271}
+  - component: {fileID: -4728492549159805978}
   m_Layer: 0
   m_Name: ecbb1b5a4df04fda9ad2a38cd2be6c3e
   m_TagString: Untagged
@@ -66,10 +67,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: -8482324533978038040}
+  - {fileID: -4728492549159805978}
+  - {fileID: 8843474673236966271}
   executingIndex: -1
   isExecuting: 0
---- !u!114 &-8482324533978038040
+--- !u!114 &8843474673236966271
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,14 +80,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 4540978798487187559}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6282f5544d2140058bc7a23c0771c00, type: 3}
+  m_Script: {fileID: 11500000, guid: 093bbc6a7c1334b37ac569a948728c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
-  audioClip: {fileID: 0}
-  message:
-    content: Yeet
-    postProcess: 0
-    translationID: 0
-  color: {r: 1, g: 1, b: 1, a: 1}
-  time: 2
+  waitTime: 120
+--- !u!114 &-4728492549159805978
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4540978798487187559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093bbc6a7c1334b37ac569a948728c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  waitTime: 5

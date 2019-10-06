@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2829998058879645335}
   - component: {fileID: 8763382017058191386}
   - component: {fileID: -8247157567849689685}
+  - component: {fileID: 4414280445471204405}
   m_Layer: 0
   m_Name: 2fc132d7f21f498e8e4ff77814b7016d
   m_TagString: Untagged
@@ -67,6 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions:
   - {fileID: -8247157567849689685}
+  - {fileID: 4414280445471204405}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &-8247157567849689685
@@ -82,6 +84,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
-  audioClip: {fileID: 8300000, guid: d53d6acc1efce1e4296fdd63d421a1a1, type: 3}
-  fadeIn: 0
-  fadeInTime: 0
+  audioClip: {fileID: 8300000, guid: 1848e5c0f65bc1542a32b7b6c41f30a4, type: 3}
+  fadeIn: 1
+  fadeInTime: 0.75
+--- !u!114 &4414280445471204405
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8916503400785928699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093bbc6a7c1334b37ac569a948728c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  waitTime: 100
