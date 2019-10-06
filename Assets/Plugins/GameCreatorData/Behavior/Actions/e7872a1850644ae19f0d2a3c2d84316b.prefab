@@ -84,9 +84,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
-  audioClip: {fileID: 8300000, guid: 10546d9649879d14e8277d84c34d122e, type: 3}
+  audioClip: {fileID: 8300000, guid: 1848e5c0f65bc1542a32b7b6c41f30a4, type: 3}
   fadeIn: 1
-  fadeInTime: 1.07
+  fadeInTime: 0.53
 --- !u!114 &5228435070115414827
 MonoBehaviour:
   m_ObjectHideFlags: 3
