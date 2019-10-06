@@ -136,7 +136,6 @@
     <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterStateWeight.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterStopGesture.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterTeleport.cs" />
-    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterVisibility.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionHeadTrack.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionPlayerMovementInput.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Characters\Conditions\ConditionCharacterCapsule.cs" />
@@ -160,7 +159,6 @@
     <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Navigation\LocomotionSystems\LocomotionSystemDirectional.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Navigation\LocomotionSystems\LocomotionSystemFollow.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Navigation\LocomotionSystems\LocomotionSystemRotation.cs" />
-    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Navigation\LocomotionSystems\LocomotionSystemTank.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Navigation\LocomotionSystems\LocomotionSystemTarget.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\PlayerCharacter.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Marker\NavigationMarker.cs" />
@@ -476,13 +474,18 @@
     <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Utilities\GlobalVariablesUtilities.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Utilities\LocalVariablesUtilities.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Utilities\VariablesEvents.cs" />
-    <Compile Include="Assets\Plugins\GameCreatorHub\Actions\ActionWanderAround.cs" />
     <None Include="Assets\Plugins\GameCreator\Extra\Shaders\ScreenSpaceUI.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -502,29 +505,23 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/allen/Documents/GitHub/Game-Jam-2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -1082,13 +1079,13 @@
       <Project>{516E68B6-8C2E-EAEB-F8CB-1160166BD422}</Project>
       <Name>PackageToolsEditor</Name>
     </ProjectReference>
-    <ProjectReference Include="GameCreator.Update.csproj">
-      <Project>{320F57CD-53E6-BF06-FB91-7C61066AE10F}</Project>
-      <Name>GameCreator.Update</Name>
-    </ProjectReference>
     <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
       <Project>{684C026F-8B75-089B-FFB7-8570B00C6869}</Project>
       <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="GameCreator.Update.csproj">
+      <Project>{320F57CD-53E6-BF06-FB91-7C61066AE10F}</Project>
+      <Name>GameCreator.Update</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
