@@ -101,7 +101,7 @@ MonoBehaviour:
       targetObject: {fileID: 0}
       select: 1
       index: 0
-  waitToFinish: 1
+  waitToFinish: 0
 --- !u!114 &-6176133557906524019
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -115,4 +115,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
-  waitTime: 7
+  waitTime: 2
