@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -4634001936610134358}
   - component: {fileID: 8986498091781470031}
   - component: {fileID: -8291951106590713624}
+  - component: {fileID: -3189565811979397932}
   m_Layer: 0
   m_Name: ccc7d0e626e64405955866ff08264c9c
   m_TagString: Untagged
@@ -71,6 +72,7 @@ MonoBehaviour:
   - {fileID: -4634001936610134358}
   - {fileID: -8291951106590713624}
   - {fileID: 8986498091781470031}
+  - {fileID: -3189565811979397932}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &-4634001936610134358
@@ -157,3 +159,57 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: 9ffb473a8305d8741a911f9eef94a48c, type: 3}
   fadeIn: 0
   fadeInTime: 0
+--- !u!114 &-3189565811979397932
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2296818780314869739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c46e5a9775dc496abbf85c5045fea47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  character:
+    target: 1
+    character: {fileID: 0}
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    global:
+      allowTypesMask: 512
+      name: 
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+    eventChangeVariable:
+      m_PersistentCalls:
+        m_Calls: []
+  actionType: 0
+  followTarget:
+    target: 0
+    gameObject: {fileID: 0}
+    global:
+      allowTypesMask: 512
+      name: 
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+    eventChangeVariable:
+      m_PersistentCalls:
+        m_Calls: []
+  followMinRadius: 2
+  followMaxRadius: 4
