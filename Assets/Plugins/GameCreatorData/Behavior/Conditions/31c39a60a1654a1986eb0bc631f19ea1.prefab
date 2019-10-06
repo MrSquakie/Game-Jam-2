@@ -80,7 +80,7 @@ MonoBehaviour:
         m_Calls: []
   condition: 0
   target:
-    target: 3
+    target: 4
     gameObject: {fileID: -927199367670048503, guid: f03a5df36c44f41498636414d8bde547,
       type: 3}
     global:
@@ -88,8 +88,8 @@ MonoBehaviour:
       name: 
     local:
       allowTypesMask: 512
-      name: 
-      targetType: 2
+      name: zombie
+      targetType: 1
       targetObject: {fileID: 0}
     list:
       targetType: 3
