@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2654805237099607651}
   - component: {fileID: 5464930454765460945}
   - component: {fileID: 6076828066833073705}
-  - component: {fileID: -193606590349246940}
-  - component: {fileID: 5228435070115414827}
+  - component: {fileID: -7203303997077970808}
+  - component: {fileID: -7394551462359247384}
   m_Layer: 0
   m_Name: e7872a1850644ae19f0d2a3c2d84316b
   m_TagString: Untagged
@@ -67,11 +67,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: -193606590349246940}
-  - {fileID: 5228435070115414827}
+  - {fileID: -7203303997077970808}
+  - {fileID: -7394551462359247384}
   executingIndex: -1
   isExecuting: 0
---- !u!114 &-193606590349246940
+--- !u!114 &-7203303997077970808
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,10 +84,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
-  audioClip: {fileID: 8300000, guid: 1848e5c0f65bc1542a32b7b6c41f30a4, type: 3}
-  fadeIn: 1
-  fadeInTime: 0.53
---- !u!114 &5228435070115414827
+  audioClip: {fileID: 8300000, guid: 10546d9649879d14e8277d84c34d122e, type: 3}
+  fadeIn: 0
+  fadeInTime: 0
+--- !u!114 &-7394551462359247384
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,4 +100,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
-  waitTime: 130
+  waitTime: 2.93
